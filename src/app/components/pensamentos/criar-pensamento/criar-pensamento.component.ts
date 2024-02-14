@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarPensamentoComponent implements OnInit {
 
-  pensamento = {
+  pensamento = { // FUNCIONA DO COMPONENT PRO TEMPLATE
     id : '1',
     conteudo: 'teste',
     autoria: 'matheus',
@@ -17,6 +17,10 @@ export class CriarPensamentoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  criarPensamento(){
+    alert("novo pensamento") // FUNCIONA NA DIREÇÃO CONTRARIA -> DO TEMPLATE PRO COMPONENT
   }
 
 }
