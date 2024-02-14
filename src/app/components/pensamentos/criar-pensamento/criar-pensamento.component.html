@@ -4,9 +4,9 @@
     </header>
     <form>
         <label for="pensamento">Pensamento</label>
-        <input type="textarea" class="input" id="pensamento" name="pensamento" placeholder="Digite um pensamento">
+        <input type="textarea" class="input" id="pensamento" name="pensamento" placeholder="Digite um pensamento" [value]="pensamento.conteudo">
         <label for="autoria">Autoria ou fonte</label>
-        <input type="textarea" class="input" id="autoria" name="autoria" placeholder="Digite a autoria ou fonte">
+        <input type="textarea" class="input" id="autoria" name="autoria" placeholder="Digite a autoria ou fonte" [value]="pensamento.autoria">
 
         <label for="modelo">Selecion o modelo do card</label>
         <div class="container-radio">
@@ -26,9 +26,9 @@
                 <div class="modelo modelo1 ff-roboto-mono">
                     <img src="../../../../assets/images/modelo1.png" alt="aspas azuis">
                     <p class="conteudo">
-                        Lorem ipsum
+                        {{pensamento.conteudo}}
                     </p>
-                    <p class="autoria"><b>Lorem ipsum
+                    <p class="autoria"><b>{{pensamento.autoria}}
                     </b>
                     </p>
                 </div>
@@ -49,9 +49,9 @@
                 <div class="modelo modelo2 ff-roboto-mono">
                     <img src="../../../../assets/images/modelo2.png" alt="aspas azul claras">
                     <p class="conteudo">
-                        Lorem ipsum
+                        {{pensamento.conteudo}}
                     </p>
-                    <p class="autoria"><b>Lorem ipsum
+                    <p class="autoria"><b>{{pensamento.autoria}}
                     </b>
                     </p>
                 </div>
@@ -72,9 +72,9 @@
                 <div class="modelo modelo3 ff-roboto-mono">
                     <img src="../../../../assets/images/modelo3.png" alt="aspas verdes">
                     <p class="conteudo">
-                        Lorem ipsum
+                        {{pensamento.conteudo}}
                     </p>
-                    <p class="autoria"><b>Lorem ipsum
+                    <p class="autoria"><b>{{pensamento.autoria}}
                     </b>
                     </p>
                 </div>
